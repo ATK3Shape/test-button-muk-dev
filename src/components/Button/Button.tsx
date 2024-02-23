@@ -1,14 +1,16 @@
-import React, { FC, ReactNode } from "react"
+import React, { FC, ReactNode, MouseEventHandler } from "react"
+import { BaseButton } from './Button.styles'
 
 interface Props{
-    children: ReactNode | ReactNode[]
+    children: ReactNode | ReactNode[];
+    onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
-const Button:FC<Props> = ({children}) => {
+const Button:FC<Props> = ({children, onClick}) => {
   return (
-    <button style={{
-        padding: '1em'
-    }} >{children}</button>
+    <BaseButton 
+      onClick={onClick}
+    >{children}</BaseButton>
   )
 }
 
