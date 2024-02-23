@@ -1,6 +1,6 @@
 {
   "name": "@atk3shape/test-button-muk-dev",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "A test react component library",
   "main": "dist/cjs/index.js",
   "files": [
