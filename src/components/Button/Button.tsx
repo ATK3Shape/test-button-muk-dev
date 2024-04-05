@@ -14,7 +14,7 @@ const Button:FC<Props> = ({children, onClick, variant}) => {
     <BaseButton 
       $variant={variant}
       onClick={onClick}
-    >{children}</BaseButton>
+    >{children} <span>text</span></BaseButton>
   )
 }
 
